@@ -20,60 +20,75 @@
         color: white;
         font-family: "Poppins", sans-serif;
       }
-      nav{
+      nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
         height: 80px;
         background-color: rgb(2, 2, 71);
       }
-      nav ul{
+      nav ul {
         display: flex;
         justify-content: center;
-
       }
-      nav ul li{
-        list-style: none; 
+      nav ul li {
+        list-style: none;
         margin: 0 23px;
       }
-      nav ul li a{
-        text-decoration: none; 
+      nav ul li a {
+        text-decoration: none;
         color: white;
-      } 
-      nav ul li a:hover{
+      }
+      nav ul li a:hover {
         color: rgb(164, 164, 240);
         font-size: 1.02rem;
       }
-      .left{
+      main hr {
+        border: 0;
+        background: rgb(208, 168, 245);
+        height: 1.2px;
+        margin: 40px, 84px;
+      }
+      .left {
         font-size: 1.5rem;
       }
-      .firstSection{
+      .firstSection {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        margin: 80px 0;
+        margin: 120px 0;
       }
-      .firstSection > div{
+      .firstSection > div {
         width: 30%;
       }
-      .leftSection{
+      .leftSection {
         font-size: 2.5rem;
-        
-        
       }
-      .rightSection img{
+      .rightSection img {
         width: 80%;
-        
       }
-      .purple{
+      .purple {
         color: rgb(183, 123, 239);
       }
-      #element{
+      .grey {
+        color: gray;
+      }
+      #element {
         color: rgb(183, 123, 239);
       }
-      .secondSection{
+      .secondSection {
         max-width: 80vw;
         margin: auto;
+        height: 80vh;
+      }
+      .secondSection h1 {
+        font-size: 1.5rem;
+      }
+      .secondSection .box {
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
       }
     </style>
   </head>
@@ -82,14 +97,13 @@
       <nav>
         <div class="left">Preeti's Portfolio</div>
         <div class="right">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Services</a></li>
-                <li><a href="/">Projects</a></li>
-                <li><a href="/">Contact Me</a></li>
-
-            </ul>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -101,18 +115,20 @@
           <span id="element"></span>
         </div>
         <div class="rightSection">
-          <img src="developer.png">
+          <img src="developer.png" />
         </div>
-
       </section>
+      <hr />
       <section class="secondSection">
-        <h1>Past Experience</h1>
+        <span class="grey">What I have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="box"></div>
       </section>
     </main>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-      var typed = new Typed('#element', {
-        strings: ['Wev Developer', 'Web Designer'],
+      var typed = new Typed("#element", {
+        strings: ["Wev Developer", "Web Designer"],
         typeSpeed: 50,
       });
     </script>
