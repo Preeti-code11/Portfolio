@@ -89,6 +89,35 @@
         width: 80vw;
         height: 2px;
         margin: 56px 0;
+        display: flex;
+      }
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 150px;
+      }
+      .image-top {
+        width: 60px;
+        position: relative;
+        top: -30px;
+        left: -7px;
+      }
+      #doitc{
+        background-color: white;
+        width: 100px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 90px;
+        color: gray;
+        width: 150px;
+        font-size: 10px;
       }
     </style>
   </head>
@@ -122,13 +151,50 @@
       <section class="secondSection">
         <span class="grey">What I have done so far</span>
         <h1>Work Experience</h1>
-        <div class="box"></div>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" id="doitc" src="doitc-logo.png" alt="" />
+            <div class="vertical-title">Informatics Assistant - DOITC (2013-2015)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsa
+              soluta libero commodi perferendis culpa beatae optio sapiente
+              placeat cupiditate?
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="aevnour.png" alt="" />
+            <div class="vertical-title">HTML Developer (2015-2018)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsa
+              soluta libero commodi perferendis culpa beatae optio sapiente
+              placeat cupiditate?
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="aevnour.png" alt="" />
+            <div class="vertical-title">Backend Developer (2017-2020)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsa
+              soluta libero commodi perferendis culpa beatae optio sapiente
+              placeat cupiditate?
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="aevnour.png" alt="" />
+            <div class="vertical-title">Full Stack Developer (2020-2023)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsa
+              soluta libero commodi perferendis culpa beatae optio sapiente
+              placeat cupiditate?
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed("#element", {
-        strings: ["Wev Developer", "Web Designer"],
+        strings: ["Wev Designer", "Web Developer"],
         typeSpeed: 50,
       });
     </script>
